@@ -28,7 +28,7 @@ public class PowerOfTwo {
             num = num / 2;
             if(num == 1) return true;
         }
-
+        
         return false;
     }
 }
