@@ -9,12 +9,16 @@ import java.util.Scanner;
 
 public class PowerOfTwo {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        
-        boolean bool = checkValidity(num);
-        System.out.println(bool);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
+            int num = sc.nextInt();
+            
+            boolean bool = checkValidity(num);
+            System.out.println(bool);
+        }
+        catch(Exception e){
+            System.out.println("Please enter a number!!");
+        }
     }
 
     public static boolean checkValidity(int num){
