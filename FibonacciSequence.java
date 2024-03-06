@@ -3,15 +3,15 @@
 
 public class FibonacciSequence {
     public static void main(String[] args){
-        int size = 100;
-        long f = 1;
-        long s = 0;
+        int f = 1;
+        int s = 0;
+        int sum = 0;
 
-        for(int i = 0; i < size; i++){
-            long sum = f + s;
+        while(f < 100){
+            System.out.println(f);
+            sum = f + s;
             s = f;
             f = sum;
-            System.out.println(s);
         }
     }
 }
